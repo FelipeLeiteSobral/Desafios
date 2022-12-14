@@ -1,0 +1,297 @@
+/* ______________________________________________ Project ________________________________________________ */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22212C;
+}
+
+h1, h2, h4, h5, p, svg, button, strong{
+    color:#837E9F;
+    font-family:"Merriweather Sans",sans-serif;
+}
+
+h1{
+    padding-top:30px;
+    font-size: 23px;
+}
+
+li {
+    list-style:none;
+}
+/* ______________________________________________ header ________________________________________________ */
+
+header.profile, aside , div.my-projects, div.recent-posts, div.my-onix-left, div.my-onix-right, div.atual{
+    display: flex;
+    flex-direction: column;
+    background-color: #302F3D;
+    position: absolute;
+    left:40px;
+    width: 348px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* ______________________________________________ profile ________________________________________________ */
+
+header.profile {
+    top: 40px;
+    height: 292px;
+    align-items: center;
+}
+
+header div.circle {
+    width: 128px;
+    height: 128px;
+    left: 150px;
+    margin-top: 32px;
+    
+    background: url(https://avatars.githubusercontent.com/u/109388291?v=4);
+    border: 2px solid #00ff00;
+    border-radius: 100%;
+    background-size:100%;
+}
+
+
+header h5{
+    padding: 10px 0 49px;
+    font-weight: 200;
+}
+
+/* ______________________________________________ left side (aside) ________________________________________________ */
+aside.tecnologias h1, aside.experiencias h1, aside.educacao h1{
+    padding: 30px 0px 20px 20px;
+}
+/*Navigation*/
+
+aside.navigation{
+    top: 362px;
+    padding: 10px 0 30px;
+}
+
+a{
+    display: flex;
+    padding: 20px 20px 0 40px;
+    gap: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+a h5:hover, a svg:hover{
+    color:white;
+}
+
+/*Tecnologias*/
+
+aside.tecnologias{
+    top: 740px;
+    height: 208px;
+}
+
+aside.tecnologias ul{
+    display: flex;
+    padding: 0 30px 30px 30px;
+    flex-direction: column;
+    gap:15px;
+}
+aside.tecnologias ul li{
+    display: flex;
+    gap:15px;
+}
+button{
+    height: 24px;
+    width: 86px;
+    background-color: #00ff00;
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    color:black;
+    
+    font-weight: 700;
+    font-size:12px;
+}
+
+button:hover{
+    background-color:#81ff81
+}
+
+/*Experiencias*/
+
+aside.experiencias{
+    top: 978px;
+    height:349px;
+}
+
+aside.experiencias ul {
+    display: flex;
+    flex-direction: column;
+    padding:0 60px;
+    gap:15px;
+}
+
+aside.experiencias ul li {
+    list-style:disc;
+    color: #837E9F;
+}
+h4{
+    font-size:14px;
+}
+
+p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+p strong {
+    font-weight: 600;
+}
+
+/*Educação*/
+
+aside.educacao{
+    top: 1357px;
+    height:349px;
+}
+
+aside.educacao ul {
+    display: flex;
+    flex-direction: column;
+    padding:0 60px;
+    gap:15px;
+}
+
+aside.educacao ul li {
+    list-style:disc;
+    color: #837E9F;
+}
+h4{
+    font-size:14px;
+}
+
+p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+p strong {
+    font-weight: 600;
+}
+
+/* ______________________________________________ main ________________________________________________ */
+/*My projects*/
+
+main div.my-projects, div.recent-posts{
+    top:40px;
+    left: 448px;
+    height: 86px;
+    width:calc(100% - 488px);
+    justify-content: center;
+}
+
+main div h1{
+    padding:0 40px;
+}
+
+/*My-onix*/
+
+main div.my-onix-left{
+    top:157px;
+    left:448px;
+    height: 186px;
+    width:calc(100% - 1214px);
+    padding: 30px;
+}
+div.title{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+}
+
+div.title h2{
+    font-size:18px;
+}
+
+div p {
+    font-size: 14px;
+}
+div.separacao{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.info-project, div.left-info{
+    display: flex;
+    gap:8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.right-info {
+    display: flex;
+    gap:8px;
+}
+
+div.right-info p {
+    font-weight: 600;
+    
+}
+
+div.right-info div{
+    width: 15px;
+    height:15px;
+    background-color:#00ff00;
+    border-radius: 100%;
+    border: solid 2px #837E9F;
+}
+
+div.my-onix-right{
+    top:157px;
+    left:calc(100% - 730px);
+    height: 186px;
+    width: calc(100% - 1214px);
+    padding: 30px;
+}
+
+/*Recent Posts*/
+main div.recent-posts{
+    top:373px;
+}
+
+/*Atual*/
+main div.atual{
+    flex-direction: row;
+    top:489px;
+    left: 448px;
+    height: 201px;
+    width:calc(100% - 488px);
+    padding: 31px 0 0 30px;
+}
+
+main div.atual img {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+}
+main div.atual div {
+    padding-left: 20px ;
+}
+
+main div.atual div h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+main div.atual div p{
+    padding-top:28px;
+    padding-bottom:11px;
+}
+main div.atual div strong {
+    font-weight: 600;
+    font-size:12px;
+    margin-right: 20px; 
+}

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket News</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/logo.svg" alt="logo">
+    </header>
+    <div class="bg"></div>
+    <main>
+        <h1>Atualize ideias e informações em 5 minutos.</h1>
+        <p>
+            <strong>Tudo que você precisar saber para começar seu dia bem e informado <br></strong>
+            noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor. <br>
+            Perfeito para se preparar para codar.
+        </p>
+    </main>
+    <form action="">
+        <Label for="mail">Insira seu e-mail:</Label>
+        <div>
+            <div></div>
+            <input type="mail" id="mail" placeholder="oi@rocketseat.com">
+            <button onclick="alerta()" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></button>
+        </div>
+    </form>
+    <a href="">Deixe-me ler primeiro</a>
+</body>
+<script>
+    function alerta(){
+        return alert("Email enviado com sucesso!")
+    }
+</script>
+</html>

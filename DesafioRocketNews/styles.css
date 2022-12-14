@@ -1,0 +1,119 @@
+*{
+    font-family: "Work Sans", sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+body{
+    background-color: #121214;
+}
+header img{
+    height: 94px;
+    width: 389px;
+    margin: 50px 0 92px 30px;
+}
+div img {
+    width:50%;
+    height: 100vh;
+    object-fit:cover;
+    object-position: right;
+}
+
+.bg{
+    position: absolute;
+    top:0;
+    left:50%;
+    background-image: url(./assets/read_news.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    width:50%;
+    height:100vh;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+    padding-left:36px;
+}
+
+main h1 {
+    font-size:28px;
+    font-weight: 700px;
+    color: #08c05e;
+}
+
+main p {
+    font-size:16px;
+    color: white;
+    padding-top: 18px;
+    line-height: 20px;
+}
+main p strong {
+    display: block;
+    margin-bottom:8px ;
+}
+form {
+    margin:50px 0 50px 36px;
+    z-index: 1;
+}
+
+label {
+    display: block;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    padding-bottom:18px
+}
+
+a{
+    padding-left:36px ;
+    font-size:18px;
+    font-weight: bold;
+    color:#8257e5;
+}
+form div {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 1026px;
+    box-shadow: 4px 10px 15px 0 black;
+}
+
+form div div{
+    height:48px;
+    width: 5px;
+    background-color: #08c05e;
+    border: 0;
+}
+form div input{
+    padding-left:8px;
+    width:996px;
+    height: 48px;
+    border: 0;
+}
+
+input:focus{
+    border: 0 none;
+    outline: 0;
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color:#8257e5;
+    border:0;
+}
+button svg{
+    height: 100%;
+    width:36px;
+    background-color: #8257e5;
+    cursor: pointer;
+    color:white;
+}
