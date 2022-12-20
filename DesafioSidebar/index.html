@@ -18,10 +18,12 @@
                 <img src="./images/images/menu.svg" alt="menu" class="menu">
             </div>
         </section>
-        <div class="buscar">
-            <img src="./images/images/search.svg" alt="lupa">
-            <input type="text" placeholder="Buscar">
-        </div>
+        <label for="search">
+            <div class="buscar">
+                <img src="./images/images/search.svg" alt="lupa">
+                <input type="text" placeholder="Buscar" id="search">
+            </div>
+        </label>
         <div class="dashboard">
             <img src="./images/images/grid.svg" alt="lupa">
             <h5>Dashboard</h5>
@@ -54,10 +56,12 @@
     </nav>
     <script>
         let menu = document.querySelector('.menu');
+        let lupa = document.querySelector(".buscar")
         let nav = document.querySelector(".nav");
+
         menu.onclick = function(){
             nav.classList.toggle('active');
-        } 
+        }
     </script>
 </body>
 </html>

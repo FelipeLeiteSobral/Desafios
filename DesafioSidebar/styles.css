@@ -19,7 +19,7 @@ nav{
     background-color:#18C29C;
     padding:14px;
     gap:1px;
-    transition: 0.35s;
+    transition: 1s;
 }
 
 section.header{
@@ -45,9 +45,14 @@ div.buscar, div.dashboard, div.pets, div.clientes, div.vets, div.ajustes{
     gap:13px;
     cursor: pointer;
     align-items: center;
-    transition: 0.5;
+    transition: 0.1s;
 }
-div.buscar:hover, div.dashboard:hover, div.pets:hover, div.clientes:hover, div.vets:hover, div.ajustes:hover{
+
+div.buscar{
+    background-color:#8ED7C6;
+}
+
+div.dashboard:hover, div.pets:hover, div.clientes:hover, div.vets:hover, div.ajustes:hover{
     background-color:#8ED7C6;
 }
 div.buscar input{
@@ -58,7 +63,6 @@ div.buscar input{
 ::placeholder{
     color: #084236;
     opacity: 1;
-    transition: 0.5;
 }
 
 footer{
@@ -73,6 +77,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     transition: 0.5;
+    opacity: 1;
 }
 a{
     display: flex;
@@ -117,7 +122,14 @@ nav.active section div img.menu{
 }
 nav.active div.buscar:hover, nav.active div.dashboard:hover, nav.active div.pets:hover, nav.active div.clientes:hover, nav.active div.vets:hover, nav.active div.ajustes:hover{
     background-color:#fff;
+    transition: 0.35s;
 }
 nav.active footer, nav.active section{
     justify-content: center;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
