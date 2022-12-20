@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color:#084236;
+    font-weight:400;
+}
+
+nav{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100vh;
+    width:250px;
+    background-color:#18C29C;
+    padding:14px;
+    gap:1px;
+    transition: 0.35s;
+}
+
+section.header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between
+}
+
+section.header img.logo{
+    padding:10px 0 25px 15px ;
+    cursor: pointer;
+}
+section.header img.menu{
+    padding:10px 0 25px;
+    cursor: pointer;
+}
+
+div.buscar, div.dashboard, div.pets, div.clientes, div.vets, div.ajustes{
+    display: flex;
+    padding: 13px;
+    width: 100%;
+    border-radius:12px;
+    gap:13px;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.5;
+}
+div.buscar:hover, div.dashboard:hover, div.pets:hover, div.clientes:hover, div.vets:hover, div.ajustes:hover{
+    background-color:#8ED7C6;
+}
+div.buscar input{
+    border:0px none;
+    background-color:transparent;
+    outline: none;
+}
+::placeholder{
+    color: #084236;
+    opacity: 1;
+    transition: 0.5;
+}
+
+footer{
+    display: flex;
+    background-color: #8ED7C6;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px 14px ; 
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5;
+}
+a{
+    display: flex;
+    align-items: center;
+}
+div.user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 14px;
+}
+
+span{
+    font-size:12px;
+}
+
+footer div.user img{
+    width:45px;
+    height:45px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 12px;
+}
+
+
+footer img{
+    height:24px;
+    width:24px;
+}
+
+/*   curto sidebar   */
+
+nav.active{
+    width: 78px;
+}
+nav.active div h5, nav.active section img.logo, nav.active div input, nav.active footer div{
+    display:none;
+}
+nav.active section div img.menu{
+    padding:10px 0 25px;
+    
+}
+nav.active div.buscar:hover, nav.active div.dashboard:hover, nav.active div.pets:hover, nav.active div.clientes:hover, nav.active div.vets:hover, nav.active div.ajustes:hover{
+    background-color:#fff;
+}
+nav.active footer, nav.active section{
+    justify-content: center;
+}
