@@ -1,4 +1,4 @@
-let to = new Date("dec 19 2022 12:03:00");
+let to = new Date("dec 21 2022 12:03:00");
 function update(){
     let from = new Date();
         diff = to-from;
